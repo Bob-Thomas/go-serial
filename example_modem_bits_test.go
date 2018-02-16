@@ -7,7 +7,7 @@
 package serial_test
 
 import "log"
-import "go.bug.st/serial.v1"
+import "github.com/bob-thomas/go-serial"
 import "fmt"
 import "time"
 

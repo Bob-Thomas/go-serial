@@ -4,7 +4,7 @@ go:
   - 1.7.x
   - 1.8.x
 
-go_import_path: go.bug.st/serial.v1
+go_import_path: github.com/bob-thomas/go-serial
 
 env:
   - TEST_OS=linux TEST_ARCH=386
@@ -28,8 +28,8 @@ before_install:
 script:
   - GOARM=5 GO386=387 GOOS=$TEST_OS GOARCH=$TEST_ARCH go get github.com/stretchr/testify/require
   - GOARM=5 GO386=387 GOOS=$TEST_OS GOARCH=$TEST_ARCH go get golang.org/x/sys/windows
-  - GOARM=5 GO386=387 GOOS=$TEST_OS GOARCH=$TEST_ARCH go build -v go.bug.st/serial.v1
-  - GOARM=5 GO386=387 GOOS=$TEST_OS GOARCH=$TEST_ARCH go test -c -v go.bug.st/serial.v1
+  - GOARM=5 GO386=387 GOOS=$TEST_OS GOARCH=$TEST_ARCH go build -v github.com/bob-thomas/go-serial
+  - GOARM=5 GO386=387 GOOS=$TEST_OS GOARCH=$TEST_ARCH go test -c -v github.com/bob-thomas/go-serial
 
 notifications:
   email:

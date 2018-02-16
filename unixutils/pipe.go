@@ -6,7 +6,7 @@
 
 // +build linux darwin freebsd openbsd
 
-package unixutils // import "go.bug.st/serial.v1/unixutils"
+package unixutils // import "github.com/bob-thomas/go-serial/unixutils"
 
 import "syscall"
 import "fmt"
