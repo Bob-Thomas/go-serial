@@ -67,6 +67,7 @@ func GetPortsList() ([]string, error) {
 type Mode struct {
 	BaudRate int      // The serial port bitrate (aka Baudrate)
 	DataBits int      // Size of the character (must be 5, 6, 7 or 8)
+	DTROn    bool     // Data terminal ready pin
 	Parity   Parity   // Parity (see Parity type for more info)
 	StopBits StopBits // Stop bits (see StopBits type for more info)
 }
