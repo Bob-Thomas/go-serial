@@ -191,7 +191,7 @@ func nativeOpen(portName string, mode *Mode) (*unixPort, error) {
 		return nil, &PortError{code: InvalidSerialPort, causedBy: err}
 	}
 	port.closeSignal = pipe
-
+	port.SetDTR(mode.DTROn)
 	return port, nil
 }
 
